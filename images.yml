@@ -1,2 +1,5 @@
 ghcr.io/advplyr/audiobookshelf:latest:
-  - swr.cn-north-4.myhuaweicloud.com/bxb100/advplyr/audiobookshelf
+  - registry.cn-hangzhou.aliyuncs.com/bxb100/audiobookshelf:latest
+#  - swr.cn-north-4.myhuaweicloud.com/bxb100/advplyr/audiobookshelf
+nginx:
+  - swr.cn-north-4.myhuaweicloud.com/bxb100/nginx
