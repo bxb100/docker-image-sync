@@ -1,0 +1,4 @@
+#docker login -u cn-north-4@XQNUKPUMOGQEVYAJMKPD -p 10b6a4f2c007195095b8512168667c29a078d29596f277292bf4730370dc4538 swr.cn-north-4.myhuaweicloud.com
+swr.cn-north-4.myhuaweicloud.com:
+  username: ${HUAWEI_U}
+  password: ${HUAWEI_P}
