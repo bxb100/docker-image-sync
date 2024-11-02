@@ -4,3 +4,6 @@ swr.cn-north-4.myhuaweicloud.com:
 registry.cn-hangzhou.aliyuncs.com:
   username: ${ALI_U}
   password: ${ALI_P}
+ghcr.io:
+  username: ${GITHUB_U}
+  password: ${GITHUB_P}

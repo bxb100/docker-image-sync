@@ -22,6 +22,8 @@ jobs:
           HUAWEI_P: "op://dev/g4v53qv5sgvxjr5o36yv4z4j7a/mxvviiefy4eovsqjnjxp26nhpy/password"
           ALI_U: "op://dev/hrtvlsndxhu47tnokn3kwaiqki/username"
           ALI_P: "op://dev/hrtvlsndxhu47tnokn3kwaiqki/credential"
+          GITHUB_U: "op://dev/kxty2ca7vd4rm3grjli6z6cs2i/username"
+          GITHUB_P: "op://dev/kxty2ca7vd4rm3grjli6z6cs2i/credential"
       - uses: hhyasdf/image-sync-action@v1.1
         with:
           auth_file: ./auth.yml
