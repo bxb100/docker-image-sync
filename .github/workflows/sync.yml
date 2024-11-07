@@ -12,8 +12,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Load secrets from 1Password
-        uses: 1Password/load-secrets-action@v2
+      - name: Inject secrets from 1Password
+        uses: bxb100/load-secrets-action@v0
         with:
           export-env: 'true'
         env:
