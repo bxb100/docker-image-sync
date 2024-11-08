@@ -24,9 +24,9 @@ jobs:
           ALI_P: "op://dev/hrtvlsndxhu47tnokn3kwaiqki/credential"
           GITHUB_U: "op://dev/kxty2ca7vd4rm3grjli6z6cs2i/username"
           GITHUB_P: "op://dev/kxty2ca7vd4rm3grjli6z6cs2i/credential"
-      - uses: hhyasdf/image-sync-action@v1.1
+      - name: Skopeo Sync Action
+        uses: bxb100/skopeo-sync-action@v0.0.0    
         with:
           auth_file: ./auth.yml
           images_file: ./images.yml
-          version: latest
-          proc: 20
+          skip_error: true
