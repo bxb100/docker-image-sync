@@ -25,7 +25,7 @@ jobs:
           GITHUB_U: "op://dev/kxty2ca7vd4rm3grjli6z6cs2i/username"
           GITHUB_P: "op://dev/kxty2ca7vd4rm3grjli6z6cs2i/credential"
       - name: Skopeo Sync Action
-        uses: bxb100/skopeo-sync-action@v0.0.0    
+        uses: bxb100/skopeo-sync-action@v0   
         with:
           auth_file: ./auth.yml
           images_file: ./images.yml
