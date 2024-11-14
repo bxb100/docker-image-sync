@@ -1,5 +1,4 @@
 ghcr.io/advplyr/audiobookshelf:latest:
   - registry.cn-hangzhou.aliyuncs.com/bxb100/audiobookshelf:latest
   - swr.cn-north-4.myhuaweicloud.com/bxb100/advplyr/audiobookshelf
-#nginx:latest:
-#  - swr.cn-north-4.myhuaweicloud.com/bxb100/nginx:latest
+ghcr.io/super-linter/super-linter: swr.cn-north-4.myhuaweicloud.com/bxb100/super-linter/super-linter
