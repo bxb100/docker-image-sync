@@ -5,3 +5,4 @@ ghcr.io/super-linter/super-linter:latest: swr.cn-north-4.myhuaweicloud.com/bxb10
 xhofe/alist:latest: swr.cn-north-4.myhuaweicloud.com/bxb100/xhofe/alist:latest
 postgres:16: swr.cn-north-4.myhuaweicloud.com/bxb100/postgres:16
 ghcr.io/maybe-finance/maybe:latest: swr.cn-north-4.myhuaweicloud.com/bxb100/maybe-finance/maybe:latest
+pixman/pixman:latest: swr.cn-north-4.myhuaweicloud.com/bxb100/pixman/pixman
