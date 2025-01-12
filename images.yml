@@ -6,3 +6,4 @@ xhofe/alist:latest: swr.cn-north-4.myhuaweicloud.com/bxb100/xhofe/alist:latest
 postgres:16: swr.cn-north-4.myhuaweicloud.com/bxb100/postgres:16
 ghcr.io/maybe-finance/maybe:latest: swr.cn-north-4.myhuaweicloud.com/bxb100/maybe-finance/maybe:latest
 gotson/komga:latest: swr.cn-north-4.myhuaweicloud.com/bxb100/gotson/komga:latest
+indy2013/subconverter:latest: swr.cn-north-4.myhuaweicloud.com/bxb100/indy2013/subconverter:latest
