@@ -11,3 +11,4 @@ xxnuo/mtranserver:latest: swr.cn-north-4.myhuaweicloud.com/bxb100/xxnuo/mtranser
 browserless/chrome:latest: swr.cn-north-4.myhuaweicloud.com/bxb100/browserless/chrome:latest
 gotify/server:latest: swr.cn-north-4.myhuaweicloud.com/bxb100/gotify/server:latest
 ghcr.io/fatedier/frpc:v0.62.1: swr.cn-north-4.myhuaweicloud.com/bxb100/fatedier/frpc:v0.62.1
+ghcr.io/bxb100/libraries-space-monitor:latest: swr.cn-north-4.myhuaweicloud.com/bxb100/libraries-space-monitor:latest
