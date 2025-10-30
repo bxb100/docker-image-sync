@@ -12,4 +12,4 @@ browserless/chrome:latest: swr.cn-north-4.myhuaweicloud.com/bxb100/browserless/c
 gotify/server:latest: swr.cn-north-4.myhuaweicloud.com/bxb100/gotify/server:latest
 ghcr.io/fatedier/frpc:v0.62.1: swr.cn-north-4.myhuaweicloud.com/bxb100/fatedier/frpc:v0.62.1
 ghcr.io/bxb100/libraries-space-monitor:latest: swr.cn-north-4.myhuaweicloud.com/bxb100/libraries-space-monitor:latest
-jxxghp/moviepilot:latest: swr.cn-north-4.myhuaweicloud.com/bxb100/moviepilot:latest
+jxxghp/moviepilot-v2:latest: swr.cn-north-4.myhuaweicloud.com/bxb100/moviepilot-v2:latest
