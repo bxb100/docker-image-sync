@@ -1,0 +1,42 @@
+name: Sync docker images
+
+on:
+  workflow_dispatch:
+  schedule:
+    # every day at 7am & 7pm pacific
+    - cron: "0 2,14 * * *"
+
+jobs:
+  sync-images:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v5
+      - name: Update skopeo
+        run: |
+          sudo apt-get update
+          sudo apt-get -y install skopeo
+      - name: Skopeo version
+        run: skopeo --version
+      - name: Inject secrets from 1Password
+        uses: bxb100/load-secrets-action@v0
+        with:
+          export_env: 'true'
+        env:
+          OP_SERVICE_ACCOUNT_TOKEN: ${{ secrets.OP_SERVICE_ACCOUNT_TOKEN }}
+          HUAWEI_U: "op://dev/g4v53qv5sgvxjr5o36yv4z4j7a/mxvviiefy4eovsqjnjxp26nhpy/username"
+          HUAWEI_P: "op://dev/g4v53qv5sgvxjr5o36yv4z4j7a/mxvviiefy4eovsqjnjxp26nhpy/password"
+          ALI_U: "op://dev/hrtvlsndxhu47tnokn3kwaiqki/username"
+          ALI_P: "op://dev/hrtvlsndxhu47tnokn3kwaiqki/credential"
+          GITHUB_U: "op://dev/kxty2ca7vd4rm3grjli6z6cs2i/username"
+          GITHUB_P: "op://dev/kxty2ca7vd4rm3grjli6z6cs2i/credential"
+      - name: Skopeo login
+        run: |
+          skopeo login --username $HUAWEI_U --password $HUAWEI_P swr.cn-north-4.myhuaweicloud.com
+          skopeo login --username $ALI_U --password $ALI_P registry.cn-hangzhou.aliyuncs.com
+          skopeo login --username $GITHUB_U --password $GITHUB_P ghcr.io
+
+      - name: Skopeo Sync
+        run: |
+          skopeo sync -a -s yaml -d docker 2hw.yml swr.cn-north-4.myhuaweicloud.com/bxb100
+          skopeo sync -a -s yaml -d docker 2al.yml registry.cn-hangzhou.aliyuncs.com/bxb100

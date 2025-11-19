@@ -1,0 +1,30 @@
+ghcr.io:
+  images:
+    advplyr/audiobookshelf:
+      - latest
+    super-linter/super-linter:
+      - latest
+    maybe-finance/maybe:
+      - latest
+    fatedier/frpc:
+      - v0.62.1
+    bxb100/libraries-space-monitor:
+      - latest
+docker.io:
+  images:
+    openlistteam/openlist:
+      - latest
+    postgres:
+      - "16"
+    gotson/komga:
+      - latest
+    tindy2013/subconverter:
+      - latest
+    xxnuo/mtranserver:
+      - latest
+    browserless/chrome:
+      - latest
+    gotify/server:
+      - latest
+    jxxghp/moviepilot-v2:
+      - latest
